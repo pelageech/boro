@@ -1,0 +1,16 @@
+version: 1
+id: example.counter
+environment: {profile: counter}
+timeouts: {scenario: 5s, action: 1s, observation: 100ms, poll: 1ms}
+resources:
+  requests:
+    type: counter.fixture
+    spec: {name: requests}
+setup:
+  - {id: increment, do: counter.increment, with: {counter: requests, by: 2}}
+steps:
+  - {id: first, expect: counter.value, with: {counter: requests}, want: {value: 2}, wait: {mode: once}}
+  - {id: second, expect: counter.value, with: {counter: requests}, want: {value: 2}, wait: {mode: once}}
+teardown:
+  - {id: increment-again, do: counter.increment, with: {counter: requests, by: 1}}
+  - {id: final, expect: counter.value, with: {counter: requests}, want: {value: 3}, wait: {mode: once}}

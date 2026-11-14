@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "invocation_id": "counter-demo",
+  "scenario_id": "example.counter",
+  "scenario_hash": "3468168974c2d12d2a915a1753eb7dbed30b96a5f8b955148e17d872c6d747a9",
+  "profile": "counter",
+  "project": "counter-demo",
+  "runner_image": "boro-counter-local",
+  "capabilities": [
+    "counter"
+  ],
+  "services": [
+    {
+      "name": "counter",
+      "roles": [
+        "counter"
+      ],
+      "capabilities": [
+        "counter"
+      ]
+    }
+  ]
+}
