@@ -2,6 +2,9 @@ module github.com/pelageech/boro
 
 go 1.26.0
 
+// These versions use an obsolete runner contract label.
+retract [v0.1.0, v0.1.1]
+
 require (
 	github.com/onsi/ginkgo/v2 v2.25.3
 	github.com/onsi/gomega v1.38.3

@@ -15,7 +15,7 @@ import (
 )
 
 // RunnerContractLabel binds the compiled composition to immutable image config.
-const RunnerContractLabel = "yc.lab.contract"
+const RunnerContractLabel = "boro.contract"
 
 var ErrContract = errors.New("incompatible boro composition")
 
