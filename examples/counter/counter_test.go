@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"boro"
-	"boro/examples/counter"
-	"boro/scenario"
+	"github.com/pelageech/boro"
+	"github.com/pelageech/boro/examples/counter"
+	"github.com/pelageech/boro/scenario"
 )
 
 func TestCounterGoAndYAMLShareBehavior(t *testing.T) {

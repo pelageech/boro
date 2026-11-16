@@ -7,7 +7,7 @@ import (
 	"slices"
 	"sync"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // ResourceKind distinguishes framework work from SUT fault state.

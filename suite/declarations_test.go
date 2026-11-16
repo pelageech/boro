@@ -3,7 +3,7 @@ package suite
 import (
 	"testing"
 
-	"boro/scenario"
+	"github.com/pelageech/boro/scenario"
 )
 
 type (

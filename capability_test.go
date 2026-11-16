@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"boro/scenario"
+	"github.com/pelageech/boro/scenario"
 )
 
 type testCapability struct {

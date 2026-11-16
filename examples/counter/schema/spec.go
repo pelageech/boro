@@ -4,7 +4,7 @@ package schema
 import (
 	"fmt"
 
-	"boro/scenario"
+	"github.com/pelageech/boro/scenario"
 )
 
 const Name = "counter"

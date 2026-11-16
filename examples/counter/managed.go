@@ -8,11 +8,10 @@ import (
 	"fmt"
 	"time"
 
-	runresult "boro/result"
-
-	"boro"
-	"boro/examples/counter/schema"
-	"boro/scenario"
+	"github.com/pelageech/boro"
+	"github.com/pelageech/boro/examples/counter/schema"
+	runresult "github.com/pelageech/boro/result"
+	"github.com/pelageech/boro/scenario"
 )
 
 // BackendFactory acquires a backend after concrete environment bindings are known.

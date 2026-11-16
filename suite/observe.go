@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	runresult "boro/result"
+	runresult "github.com/pelageech/boro/result"
 
 	"github.com/onsi/gomega"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 func (e *stepExecution) observe(ctx context.Context, step scen.Step) (string, error) {

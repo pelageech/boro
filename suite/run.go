@@ -14,8 +14,9 @@ import (
 	"github.com/onsi/ginkgo/v2/types"
 	"github.com/onsi/gomega"
 
-	"boro"
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
+
+	"github.com/pelageech/boro"
 )
 
 var (

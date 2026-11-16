@@ -8,8 +8,9 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"boro"
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
+
+	"github.com/pelageech/boro"
 )
 
 type stepExecution struct {

@@ -12,11 +12,11 @@ import (
 	"sync"
 	"time"
 
-	runresult "boro/result"
+	runresult "github.com/pelageech/boro/result"
 
 	"github.com/onsi/ginkgo/v2/types"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // ResetOptions contains independently captured inputs and two explicit bounds.

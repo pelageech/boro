@@ -11,7 +11,7 @@ import (
 	"slices"
 	"strings"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // RunnerContractLabel binds the compiled composition to immutable image config.

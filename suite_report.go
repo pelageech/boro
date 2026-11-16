@@ -9,7 +9,7 @@ import (
 
 	"github.com/onsi/ginkgo/v2/types"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // ReadSuiteReport reads the native Ginkgo JSON format for one foreground suite.

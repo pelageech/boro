@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"boro"
-	"boro/scenario"
+	"github.com/pelageech/boro"
+	"github.com/pelageech/boro/scenario"
 )
 
 type BaselineCapture func(context.Context, boro.ResolvedScenario, string, time.Duration, time.Duration) ([]byte, error)

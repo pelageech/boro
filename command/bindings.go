@@ -9,8 +9,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"boro"
-	"boro/scenario"
+	"github.com/pelageech/boro"
+	"github.com/pelageech/boro/scenario"
 )
 
 func newBindings(probe boro.BindingProbe) *cobra.Command {

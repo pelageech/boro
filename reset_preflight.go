@@ -8,7 +8,7 @@ import (
 
 	"github.com/onsi/ginkgo/v2/types"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // PreflightReset performs selected-only validation without acquiring clients or

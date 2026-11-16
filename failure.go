@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	runresult "boro/result"
+	runresult "github.com/pelageech/boro/result"
 )
 
 // Failure classifies domain reset and resource-release diagnostics.

@@ -1,7 +1,7 @@
 package boro
 
 import (
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // Mode declares whether checks run after setup.

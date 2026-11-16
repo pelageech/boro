@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"boro/examples/counter/schema"
+	"github.com/pelageech/boro/examples/counter/schema"
 )
 
 // ParseYAML validates a standalone counter spec without opening clients.

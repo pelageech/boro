@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // PrepareInvocation prepares the selected YAML tree without executing mutations.

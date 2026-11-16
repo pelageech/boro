@@ -10,12 +10,13 @@ import (
 	"testing/synctest"
 	"time"
 
-	runresult "boro/result"
+	runresult "github.com/pelageech/boro/result"
 
 	"github.com/stretchr/testify/require"
 
-	"boro"
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
+
+	"github.com/pelageech/boro"
 )
 
 var errObservation = errors.New("observation transport failed")

@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 type contractInput struct {

@@ -10,8 +10,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"boro"
-	"boro/scenario"
+	"github.com/pelageech/boro"
+	"github.com/pelageech/boro/scenario"
 )
 
 type resetFlags struct {

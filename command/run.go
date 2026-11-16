@@ -10,9 +10,9 @@ import (
 	"github.com/onsi/ginkgo/v2/types"
 	"github.com/spf13/cobra"
 
-	"boro"
-	"boro/scenario"
-	"boro/suite"
+	"github.com/pelageech/boro"
+	"github.com/pelageech/boro/scenario"
+	"github.com/pelageech/boro/suite"
 )
 
 type runFlags struct {

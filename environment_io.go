@@ -3,7 +3,7 @@ package boro
 import (
 	"io"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // ReadEnvironment parses exactly one strict environment document.

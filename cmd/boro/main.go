@@ -7,11 +7,11 @@ import (
 	"os/signal"
 	"syscall"
 
-	"boro"
-	"boro/command"
-	"boro/examples/counter"
-	"boro/examples/counter/schema"
-	"boro/scenario"
+	"github.com/pelageech/boro"
+	"github.com/pelageech/boro/command"
+	"github.com/pelageech/boro/examples/counter"
+	"github.com/pelageech/boro/examples/counter/schema"
+	"github.com/pelageech/boro/scenario"
 )
 
 func main() {

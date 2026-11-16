@@ -9,7 +9,7 @@ import (
 	"slices"
 	"strings"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // BoundService supplies concrete endpoints for a declared logical service.

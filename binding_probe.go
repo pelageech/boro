@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // BindingReport is protocol evidence, not a scenario execution or assertion.

@@ -3,7 +3,7 @@ package suite
 import (
 	"time"
 
-	runresult "boro/result"
+	runresult "github.com/pelageech/boro/result"
 )
 
 // ObservationSample is attached to the native spec for each actual protocol

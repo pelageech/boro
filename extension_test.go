@@ -23,10 +23,10 @@ import (
 	"github.com/onsi/ginkgo/v2/types"
 	"github.com/stretchr/testify/require"
 
-	"boro"
-	"boro/result"
-	"boro/scenario"
-	"boro/suite"
+	"github.com/pelageech/boro"
+	"github.com/pelageech/boro/result"
+	"github.com/pelageech/boro/scenario"
+	"github.com/pelageech/boro/suite"
 )
 
 const (

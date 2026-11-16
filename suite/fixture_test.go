@@ -10,14 +10,13 @@ import (
 	"testing"
 	"time"
 
-	runresult "boro/result"
-
 	"github.com/onsi/ginkgo/v2/types"
 	"github.com/stretchr/testify/require"
 
-	"boro"
-	scen "boro/scenario"
-	"boro/suite"
+	"github.com/pelageech/boro"
+	runresult "github.com/pelageech/boro/result"
+	scen "github.com/pelageech/boro/scenario"
+	"github.com/pelageech/boro/suite"
 )
 
 type counterInput struct {

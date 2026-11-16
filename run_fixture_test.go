@@ -8,13 +8,14 @@ import (
 	"sync"
 	"testing"
 
-	runresult "boro/result"
+	runresult "github.com/pelageech/boro/result"
 
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
 	boro "boro"
-	scen "boro/scenario"
+
+	scen "github.com/pelageech/boro/scenario"
 )
 
 func TestMain(m *testing.M) { goleak.VerifyTestMain(m) }

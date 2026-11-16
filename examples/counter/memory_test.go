@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"boro/examples/counter"
+	"github.com/pelageech/boro/examples/counter"
 )
 
 func TestMemoryBackendOwnsValuesSeparatelyFromHandles(t *testing.T) {

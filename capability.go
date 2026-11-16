@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"boro/scenario"
+	"github.com/pelageech/boro/scenario"
 )
 
 // Capability contributes pure declarations and typed execution bindings.

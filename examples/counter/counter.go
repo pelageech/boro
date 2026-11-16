@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"boro/examples/counter/schema"
-	"boro/scenario"
+	"github.com/pelageech/boro/examples/counter/schema"
+	"github.com/pelageech/boro/scenario"
 )
 
 // Spec is the same pure data type used by YAML resources.

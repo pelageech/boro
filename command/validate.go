@@ -8,7 +8,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"boro/scenario"
+	"github.com/pelageech/boro/scenario"
 )
 
 // New constructs the command surface for the caller's compiled composition.

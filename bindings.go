@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"slices"
 
-	runresult "boro/result"
+	runresult "github.com/pelageech/boro/result"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // Bindings is the immutable typed execution table supplied to Capability.Register.

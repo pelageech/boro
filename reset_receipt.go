@@ -13,7 +13,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	scen "boro/scenario"
+	scen "github.com/pelageech/boro/scenario"
 )
 
 // ResetContext is supplied by the owner before dispatch, independently of a receipt.
