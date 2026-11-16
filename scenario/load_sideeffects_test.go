@@ -24,7 +24,7 @@ func recordSideEffects(t *testing.T) {
 	processLog := filepath.Join(bin, "process-calls")
 	script := "#!/bin/sh\nprintf '%s\\n' \"$0 $*\" >> \"$SUT_SIDE_EFFECT_LOG\"\nexit 79\n"
 	for _, name := range []string{"docker", "docker-compose", "gobgp", "vppctl", "adjuster", "adjustermon", "lab-arp"} {
-		require.NoError(t, os.WriteFile(filepath.Join(bin, name), []byte(script), 0o700))
+		require.NoError(t, os.WriteFile(filepath.Join(bin, name), []byte(script), 0o700)) //nolint:gosec // G306: executable test stubs need owner execute permission.
 	}
 	t.Setenv("DOCKER_HOST", "tcp://"+strings.TrimPrefix(docker.URL, "http://"))
 	t.Setenv("SUT_SIDE_EFFECT_LOG", processLog)

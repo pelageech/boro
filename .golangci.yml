@@ -1,0 +1,76 @@
+version: "2"
+
+run:
+  timeout: 5m
+  tests: true
+  modules-download-mode: readonly
+
+linters:
+  default: standard
+  enable:
+    - bidichk
+    - bodyclose
+    - contextcheck
+    - copyloopvar
+    - durationcheck
+    - errname
+    - errorlint
+    - exhaustive
+    - fatcontext
+    - gocritic
+    - gosec
+    - iface
+    - makezero
+    - nilerr
+    - noctx
+    - nolintlint
+    - predeclared
+    - rowserrcheck
+    - sqlclosecheck
+    - testifylint
+    - unconvert
+    - usetesting
+    - wastedassign
+    - whitespace
+  settings:
+    errcheck:
+      check-type-assertions: true
+      check-blank: true
+    exhaustive:
+      check:
+        - switch
+        - mapliteral
+        - typeswitch
+      # Reflection walkers and YAML decoders intentionally dispatch subsets.
+      # Other kinds are scalar leaves or rejected by their boundary validation.
+      ignore-types:
+        - '^reflect\.Kind$'
+        - '^gopkg\.in/yaml\.v3\.Kind$'
+    nolintlint:
+      require-explanation: true
+      require-specific: true
+  exclusions:
+    generated: strict
+    # Keep correctness checks active in tests and disable implicit exclusions.
+    presets: []
+    warn-unused: true
+    rules:
+      # These fixtures read/write beneath t.TempDir and re-execute os.Executable
+      # with fixed test selectors. Keep all other security checks in tests.
+      - path: '(^|/)(extension_test|examples/counter/capability_test|suite/(fixture_test|run_test))\.go$'
+        linters:
+          - gosec
+        text: '^G(204|304|703):'
+
+formatters:
+  enable:
+    - gofumpt
+    - goimports
+  settings:
+    goimports:
+      local-prefixes:
+        - github.com/pelageech/boro
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0

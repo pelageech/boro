@@ -16,8 +16,9 @@ import (
 
 func main() {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
-	defer stop()
-	if err := run(ctx); err != nil {
+	err := run(ctx)
+	stop()
+	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
 	}
@@ -34,5 +35,6 @@ func run(ctx context.Context) error {
 	if err != nil {
 		return err
 	}
-	return command.New(command.Options{Composition: composition, Profiles: []scenario.ProfileDeclaration{schema.Profile()}}).ExecuteContext(ctx)
+	// Cobra callbacks inherit ctx through ExecuteContext and command.Context().
+	return command.New(command.Options{Composition: composition, Profiles: []scenario.ProfileDeclaration{schema.Profile()}}).ExecuteContext(ctx) //nolint:contextcheck // New registers callbacks; it does not execute them.
 }

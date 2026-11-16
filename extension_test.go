@@ -593,7 +593,7 @@ func TestExternalCapabilityEndToEnd(t *testing.T) {
 		child.Process.Pid, resolved.Identity(), document.Source(), document.Assets()[0].SHA256, proof.Contract,
 		c.acquisitions.Load(), c.releases.Load(), proof.Acquired, proof.Released, len(journal), reads, writes, failures)
 	if evidence := os.Getenv("LABTEST_TASK8_EVIDENCE"); evidence != "" {
-		require.NoError(t, os.MkdirAll(evidence, 0o755))
+		require.NoError(t, os.MkdirAll(evidence, 0o750))
 		for name, data := range map[string][]byte{
 			"external-report.json": reportBytes, "external-receipt.json": receiptBytes, "external-events.jsonl": events.Bytes(),
 			"external-child.json": proofBytes, "external-child.log": childOutput,

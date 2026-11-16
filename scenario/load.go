@@ -19,7 +19,7 @@ func LoadScenario(ctx context.Context, path string, options LoadOptions) (Scenar
 	if err != nil {
 		return Scenario{}, fmt.Errorf("scenario path: %w", err)
 	}
-	data, err := os.ReadFile(absolute)
+	data, err := os.ReadFile(absolute) //nolint:gosec // G304: loading the caller-selected scenario path is this API's contract.
 	if err != nil {
 		return Scenario{}, &InputError{File: absolute, Line: 1, Column: 1, Category: "decoding", Cause: err}
 	}

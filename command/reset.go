@@ -76,7 +76,7 @@ func (f *resetFlags) run(command *cobra.Command, _ []string) error {
 
 func readResetInput[T any](path string, decode func(io.Reader) (T, error)) (T, error) {
 	var zero T
-	file, err := os.Open(path)
+	file, err := os.Open(path) //nolint:gosec // G304: reset input paths are explicitly selected by the CLI caller.
 	if err != nil {
 		return zero, fmt.Errorf("open reset input %s: %w", path, err)
 	}

@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	boro "boro"
+	"github.com/pelageech/boro"
 
 	scen "github.com/pelageech/boro/scenario"
 )

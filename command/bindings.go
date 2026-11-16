@@ -25,7 +25,7 @@ func newBindings(probe boro.BindingProbe) *cobra.Command {
 			if err != nil {
 				return err
 			}
-			file, err := os.OpenFile(output, os.O_CREATE|os.O_EXCL|os.O_WRONLY, 0o600)
+			file, err := os.OpenFile(output, os.O_CREATE|os.O_EXCL|os.O_WRONLY, 0o600) //nolint:gosec // G304: the CLI caller selects the output path; O_EXCL prevents overwrites.
 			if err != nil {
 				return fmt.Errorf("create fresh binding evidence: %w", err)
 			}
